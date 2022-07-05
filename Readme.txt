@@ -1,0 +1,21 @@
+-pipenv install request(will create virtualenv first and then instal requests package)
+-pipenv --rm
+-pipenv install (will create environment for us)
+-pipenv lock -r
+-pipenv --venv
+-pipenv run python
+-pipenv shell(activate virtual environement)
+-pipenv install -r (pathtotherequirements.txt)
+-pipenv uninstall requests
+-pipenv install pytest --dev  (just for development builds and this pakcage will be discarded for production builds)
+-pipfile contains the packages list with versions
+-pipfile.lock is auto-generated and we are not allowed to change it manually.Just Ignore it simply.
+-to change the python version of the virtual pipenv environment, you need to change the python version in Pipfile.
+-and to recreate the enviroment using another python version we need this command.
+        =>pipenv --python=pathtopython.exe
+-pipenv check
+-pipenv install(to create enviroment from pipfile)
+-pipenv graph(will show dependecy graph)
+-pipenv lock(for making production ready pipfile.lock)(so pipfile.lock is predominantly for production ready code)
+-pipenv install --ignore-pipfile(this will pipfile based upon the pipfile.lock file which is the main one.)
+=>if we have multiple projects and environment variables for all are different then we can set .env file and from that we can access it in our project
